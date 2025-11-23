@@ -1,132 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rightsolution Windows and Doors</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Right Solution Windows & Doors</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <header class="site-header">
+    <div class="header-content">
+      <h1 class="logo">RightSolution Windows & Doors</h1>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- HEADER WITH LOGO -->
-    <header>
-  <div class="logo">LOGO</div>
-  <nav>
-    <button onclick="location.href='#contact'">Contact</button>
-    <button onclick="location.href='#services'">Services</button>
-    <button onclick="location.href='#gallery'">Gallery</button>
-  </nav>
-</header>
-
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="overlay"></div>
-        <div class="hero-content fade-slide-up">
-            <h1>Rightsolution Windows and Doors</h1>
-            <p>Professional Glass Replacement, Windows & Doors Service in the GTA</p>
-            <a href="#contact" class="btn">Contact Us</a>
-        </div>
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-text">
+        <h2>Your Trusted Window & Door Solution</h2>
+        <p>High quality windows and doors for residential and commercial needs.</p>
+      </div>
+      <div class="hero-image">
+        <img src="window-door.jpg" alt="Windows and Doors" />
+      </div>
     </section>
 
-    <!-- SERVICES -->
-    <section class="services">
-        <h2>Our Services</h2>
-
-        <div class="service-container">
-            <div class="why-box">
-                <h3>Glass Replacement</h3>
-                <p>Fast and professional replacement for cracked, broken, or foggy glass panels.</p>
-            </div>
-            <div class="why-box">
-                <h3>Window Installation & Repair</h3>
-                <p>High-quality window installations and repairs for residential and commercial properties.</p>
-            </div>
-            <div class="why-box">
-                <h3>Door Installation & Repair</h3>
-                <p>Durable and secure door installation, repair, and replacement services.</p>
-            </div>
-        </div>
+    <section id="services" class="services container">
+      <div class="service-card">
+        <h3>Installation</h3>
+        <p>Professional installation of windows and doors.</p>
+      </div>
+      <div class="service-card">
+        <h3>Replacement</h3>
+        <p>Replace old or damaged windows and doors.</p>
+      </div>
+      <div class="service-card">
+        <h3>Custom Design</h3>
+        <p>Custom windows and doors tailored to your space.</p>
+      </div>
     </section>
 
-    <!-- WHY CHOOSE US -->
-    <section class="why-us">
-        <h2>Why Choose Us</h2>
-
-        <div class="why-container">
-            <div class="why-box">
-                <h3>Experienced Professionals</h3>
-                <p>Over a decade of hands-on experience delivering top-quality work.</p>
-            </div>
-            <div class="why-box">
-                <h3>Fast & Reliable</h3>
-                <p>Quick response and same-day service available across the GTA.</p>
-            </div>
-            <div class="why-box">
-                <h3>Affordable Pricing</h3>
-                <p>Transparent and competitive pricing without hidden fees.</p>
-            </div>
-        </div>
+    <section id="products" class="products container">
+      <div class="product-card">
+        <img src="product1.jpg" alt="Product 1" />
+        <h4>Vinyl Window</h4>
+      </div>
+      <div class="product-card">
+        <img src="product2.jpg" alt="Product 2" />
+        <h4>Aluminum Door</h4>
+      </div>
+      <div class="product-card">
+        <img src="product3.jpg" alt="Product 3" />
+        <h4>Wood Window</h4>
+      </div>
     </section>
 
-    <!-- GALLERY -->
-    <section class="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery-container">
-            <img src="images/pic1.jpg" alt="Work Image">
-            <img src="images/pic2.jpg" alt="Work Image">
-            <img src="images/pic3.jpg" alt="Work Image">
-            <img src="images/pic4.jpg" alt="Work Image">
-        </div>
-        <p class="gallery-note">Replace the sample images with your real project photos.</p>
+    <section id="about" class="about container">
+      <h3>About Us</h3>
+      <p>RightSolution Windows & Doors has been providing top-quality windows and doors for over 20 years. We believe in craftsmanship, quality, and customer satisfaction.</p>
     </section>
-    <!-- REQUEST FORM -->
-    <div style="max-width:500px;margin:40px auto;padding:20px;background:#fff;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,0.08);font-family:Arial, sans-serif;">
-  <h2 style="margin-top:0;">Request a Service</h2>
-  <p style="color:#555;font-size:14px;">Get a quick quote for glass, windows, or doors. We respond fast.</p>
 
-  <form method="POST" name="contact-form" data-cf-form="true">
-    
-    <label style="font-weight:600;">Full Name</label>
-    <input type="text" name="name" required
-      style="width:100%;padding:10px;margin:8px 0 14px 0;border:1px solid #ccc;border-radius:6px;">
+    <section id="contact" class="contact container">
+      <h3>Contact Us</h3>
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
 
-    <label style="font-weight:600;">Phone Number</label>
-    <input type="tel" name="phone" required
-      style="width:100%;padding:10px;margin:8px 0 14px 0;border:1px solid #ccc;border-radius:6px;">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
 
-    <label style="font-weight:600;">Address</label>
-    <textarea name="address" rows="3" required
-      style="width:100%;padding:10px;margin:8px 0 14px 0;border:1px solid #ccc;border-radius:6px;"></textarea>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
 
-    <label style="font-weight:600;">Message (Optional)</label>
-    <textarea name="message" rows="3"
-      style="width:100%;padding:10px;margin:8px 0 14px 0;border:1px solid #ccc;border-radius:6px;"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
 
-    <button type="submit"
-      style="width:100%;padding:12px;background:#141618;color:#fff;font-weight:600;border:none;border-radius:6px;cursor:pointer;">
-      Submit Request
-    </button>
-  </form>
-</div>
-
-    <!-- CONTACT -->
-    <section class="contact" id="contact">
-        <h2>Contact Us</h2>
-
-    <div class="contact-box">
-  <h2 class="contact-title">RightSolution Windows & Doors</h2>
-  <p class="contact-desc">
-    Fast, reliable glass, window & door replacement across the GTA.
-  </p>
-
-  <p class="contact-phone">
-    Phone: <a href="tel:4166186684" class="contact-phone-link">416-618-6684</a>
-  </p>
-
-  <p class="contact-area">Service Area: Greater Toronto Area, Ontario</p>
-</div>
-<div>
-    <button class="logo" position="center">click me</button>
-</div>
-
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2025 RightSolution Windows & Doors. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
