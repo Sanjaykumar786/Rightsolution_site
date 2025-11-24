@@ -1,146 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RightSolution Windows & Doors (RSWD)</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="header">
-    <div class="header-inner">
-      <div class="logo-container">
-        <img src="rswd-logo.png" alt="RSWD Logo" class="logo-img" />
-        <span class="logo-text">RSWD</span>
-      </div>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contact</a></li>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RightSolution Windows & Doors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-brand">
+          <span class="nav-logo-text">RSWD</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-menu">
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link nav-cta">Get In Touch</a></li>
         </ul>
-      </nav>
-      <button class="menu-toggle" aria-label="Open Menu">☰</button>
-    </div>
-  </header>
+      </div>
+    </nav>
 
-  <!-- Slideshow / Carousel -->
-  <section class="slideshow-container">
-    <div class="slide fade">
-      <img src="images/hero.jpg" alt="Slide 1" />
-      <div class="caption">High Quality Windows</div>
-    </div>
-    <div class="slide fade">
-      <img src="images/slide2.jpg" alt="Slide 2" />
-      <div class="caption">Modern Door Designs</div>
-    </div>
-    <div class="slide fade">
-      <img src="images/slide3.jpg" alt="Slide 3" />
-      <div class="caption">Custom Windows & Doors</div>
-    </div>
+    <!-- Hero Slideshow -->
+    <section class="hero" aria-label="Featured slideshow">
+      <div class="slider-wrapper">
+        <div class="slider">
+          <div class="slide">
+            <img src="images/hero.jpg" alt="High Quality Windows" />
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+              <h1>Premium Windows & Doors</h1>
+              <p>Energy-efficient, beautifully crafted solutions for your home</p>
+              <a href="#contact" class="btn btn-primary">Get Your Quote Today</a>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="images/slide2.jpg" alt="Modern Door Designs" />
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+              <h1>Modern Door Designs</h1>
+              <p>Stylish, secure, and built to last for decades</p>
+              <a href="#projects" class="btn btn-light">Explore Our Work</a>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="images/slide3.jpg" alt="Custom Solutions" />
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+              <h1>Custom Solutions</h1>
+              <p>Tailored designs to match your vision perfectly</p>
+              <a href="#services" class="btn btn-light">See Services</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </section>
-
-  <main>
-    <section id="services" class="services section">
-      <h3>Our Services</h3>
-      <div class="services-grid">
-        <div class="service-box">
-          <h4>Window Installation</h4>
-          <p>Expert installation for both new and replacement windows.</p>
-        </div>
-        <div class="service-box">
-          <h4>Door Replacement</h4>
-          <p>Stylish, secure, and energy-efficient doors.</p>
-        </div>
-        <div class="service-box">
-          <h4>Custom Solutions</h4>
-          <p>Tailored windows and doors to match your design.</p>
-        </div>
-        <div class="service-box">
-          <h4>Maintenance & Repair</h4>
-          <p>Long-term care to keep everything working smoothly.</p>
-        </div>
+      <!-- Slider Controls -->
+      <div class="slider-controls">
+        <button class="slider-btn slider-prev" aria-label="Previous slide">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+        <div class="slider-dots"></div>
+        <button class="slider-btn slider-next" aria-label="Next slide">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
       </div>
     </section>
 
-    <section id="projects" class="projects section">
-      <h3>Recent Projects</h3>
-      <div class="projects-grid">
-        <div class="project-card">
-          <img src="project1.jpg" alt="Project 1" />
-          <p>Modern Home Windows</p>
+    <main>
+      <!-- Services Section -->
+      <section id="services" class="section services-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Our Services</h2>
+            <p>What we offer to enhance your home</p>
+          </div>
+          <div class="services-grid">
+            <article class="service-card">
+              <div class="service-icon">🪟</div>
+              <h3>Window Installation</h3>
+              <p>Expert installation for new builds and replacements with energy-saving technology.</p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon">🚪</div>
+              <h3>Door Replacement</h3>
+              <p>Secure and stylish doors with professional fitting and comprehensive warranties.</p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon">✨</div>
+              <h3>Custom Solutions</h3>
+              <p>Custom sizing, finishes, and hardware tailored to your architectural style.</p>
+            </article>
+            <article class="service-card">
+              <div class="service-icon">🔧</div>
+              <h3>Maintenance & Repair</h3>
+              <p>Keep your installations performing perfectly with our maintenance and repair services.</p>
+            </article>
+          </div>
         </div>
-        <div class="project-card">
-          <img src="project2.jpg" alt="Project 2" />
-          <p>Contemporary Door Entry</p>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section projects-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Recent Projects</h2>
+            <p>Showcasing our finest work</p>
+          </div>
+          <div class="projects-grid">
+            <figure class="project-card">
+              <img src="project1.jpg" alt="Modern Home Windows" />
+              <figcaption>Modern Home Windows</figcaption>
+            </figure>
+            <figure class="project-card">
+              <img src="project2.jpg" alt="Contemporary Door Entry" />
+              <figcaption>Contemporary Door Entry</figcaption>
+            </figure>
+            <figure class="project-card">
+              <img src="project3.jpg" alt="Renovated Patio Doors" />
+              <figcaption>Renovated Patio Doors</figcaption>
+            </figure>
+          </div>
         </div>
-        <div class="project-card">
-          <img src="project3.jpg" alt="Project 3" />
-          <p>Renovated Patio Doors</p>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section about-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>About RightSolution</h2>
+          </div>
+          <p class="about-text">
+            With over 20 years of experience in the windows and doors industry, RightSolution 
+            combines expert craftsmanship, cutting-edge technology, and unmatched customer service 
+            to deliver exceptional results. Every project is treated with the care and attention 
+            it deserves.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section contact-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Get In Touch</h2>
+            <p>Request a free consultation and quote</p>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <input type="tel" name="phone" placeholder="Phone Number" />
+            </div>
+            <div class="form-group">
+              <textarea name="message" placeholder="Tell us about your project..." rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; <span id="year"></span> RightSolution Windows & Doors. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="tel:+11234567890">📞 Call Us</a>
+            <a href="mailto:info@rightsolutionwindowsanddoors.com">✉️ Email</a>
+          </div>
         </div>
       </div>
-    </section>
+    </footer>
 
-    <section id="about" class="about section">
-      <h3>About Us</h3>
-      <p>With over 20 years of experience, RSWD combines craftsmanship, reliability, and customer satisfaction to deliver exceptional results.</p>
-    </section>
-
-    <section id="contact" class="contact section">
-      <h3>Contact Us</h3>
-      <form class="contact-form">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required />
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div class="form-group">
-          <label for="phone">Phone</label>
-          <input type="tel" id="phone" name="phone" />
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-inner">
-      <p>&copy; 2025 RightSolution Windows & Doors (RSWD). All Rights Reserved.</p>
-      <p><a href="tel:+11234567890">Call Us</a> | <a href="mailto:info@rightsolutionwindowsanddoors.com">Email</a></p>
-    </div>
-  </footer>
-
-  <script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function showSlides(n) {
-      const slides = document.getElementsByClassName("slide");
-      if (n > slides.length) { slideIndex = 1; }
-      if (n < 1) { slideIndex = slides.length; }
-      for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slides[slideIndex - 1].style.display = "block";
-    }
-
-    // Automatic slideshow (optional)
-    setInterval(() => plusSlides(1), 5000);
-  </script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
