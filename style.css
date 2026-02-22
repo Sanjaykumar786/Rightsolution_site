@@ -121,12 +121,25 @@ a:hover {
   color: var(--color-dark);
   text-decoration: none;
   transition: var(--transition-fast);
-  margin-right: auto;
-  padding-left: var(--spacing-md);
 }
 
 .nav-brand:hover {
   transform: scale(1.05);
+}
+
+.nav-brand-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-right: auto;
+  padding-left: var(--spacing-md);
+}
+
+.nav-brand-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-dark);
+  white-space: nowrap;
 }
 
 .nav-logo-text {
@@ -654,6 +667,16 @@ main {
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
   /* Navbar */
+  .nav-brand-section {
+    gap: 0.5rem;
+    padding-left: var(--spacing-sm);
+  }
+
+  .nav-brand-name {
+    font-size: 0.75rem;
+    display: none;
+  }
+
   .nav-menu {
     position: fixed;
     top: 70px;
